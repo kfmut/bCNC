@@ -1,3 +1,9 @@
+TODO
+=
+
+- Remove pause after toolchange;
+- Remove message box asking to remove existing autolevel information.
+
 bCNC
 ====
 
