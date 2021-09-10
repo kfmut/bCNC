@@ -2060,12 +2060,13 @@ class Application(Toplevel,Sender):
 		else:
 			if self.fileModified(): return
 
-			if not self.gcode.probe.isEmpty():
-				ans = tkMessageBox.askquestion(_("Existing Autolevel"),
-					_("Autolevel/probe information already exists.\nDelete it?"),
-					parent=self)
-				if ans==tkMessageBox.YES or ans==True:
-					self.gcode.probe.init()
+# Explicit probe data deletion required
+#			if not self.gcode.probe.isEmpty():
+#				ans = tkMessageBox.askquestion(_("Existing Autolevel"),
+#					_("Autolevel/probe information already exists.\nDelete it?"),
+#					parent=self)
+#				if ans==tkMessageBox.YES or ans==True:
+#					self.gcode.probe.init()
 
 		self.setStatus(_("Loading: %s ...")%(filename), True)
 		Sender.load(self,filename)
