@@ -2,7 +2,9 @@ TODO
 --
 
 - [ ] Remove pause after toolchange;
-- [ ] Remove message box asking to remove existing autolevel information.
+- [ ] Remove message box asking to remove existing autolevel information;
+- [ ] Eliminate `G53 G0 X0 Y0 Z0` move after interupted probe command if `Automatic GOTO after probing` is enabled;
+- [ ] Tool change policy with transitional G28 moves.
 
 ORIGINAL README:
 =====
